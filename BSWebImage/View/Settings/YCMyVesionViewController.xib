@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YCMyVesionViewController">
+            <connections>
+                <outlet property="barView" destination="UpP-8P-KIZ" id="1lA-za-ODn"/>
+                <outlet property="imageView" destination="ofH-S5-xQ2" id="gUz-jY-rlM"/>
+                <outlet property="vesionLb" destination="21Y-6C-NcA" id="kPs-tE-nZM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpP-8P-KIZ" customClass="YSNavigationBarView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="f5S-TW-3of"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ofH-S5-xQ2">
+                    <rect key="frame" x="147" y="164" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Wvu-t1-zJ8"/>
+                        <constraint firstAttribute="height" constant="80" id="tyY-pc-ljG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21Y-6C-NcA">
+                    <rect key="frame" x="0.0" y="269" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="52c-CS-Wfp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyringht@作者所有" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hci-Pd-7Rf">
+                    <rect key="frame" x="112" y="626" width="151" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2JY-dV-CWd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="21Y-6C-NcA" secondAttribute="trailing" id="Cma-Kp-zFs"/>
+                <constraint firstAttribute="trailing" secondItem="UpP-8P-KIZ" secondAttribute="trailing" id="Dq3-9l-8fw"/>
+                <constraint firstAttribute="bottom" secondItem="Hci-Pd-7Rf" secondAttribute="bottom" constant="20" id="L0E-7X-XzV"/>
+                <constraint firstItem="UpP-8P-KIZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="N2E-dC-Dif"/>
+                <constraint firstItem="ofH-S5-xQ2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="S5i-xZ-Rm7"/>
+                <constraint firstItem="Hci-Pd-7Rf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YWD-2e-G87"/>
+                <constraint firstItem="21Y-6C-NcA" firstAttribute="top" secondItem="ofH-S5-xQ2" secondAttribute="bottom" constant="25" id="jTJ-Yu-HjL"/>
+                <constraint firstItem="UpP-8P-KIZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kgP-KK-Tl7"/>
+                <constraint firstItem="21Y-6C-NcA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qM4-gs-2cU"/>
+                <constraint firstItem="ofH-S5-xQ2" firstAttribute="top" secondItem="UpP-8P-KIZ" secondAttribute="bottom" constant="100" id="ug8-Pu-kpD"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppIcon" width="16" height="16"/>
+    </resources>
+</document>
